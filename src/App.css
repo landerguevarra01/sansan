@@ -14,7 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: url('./assets/Soon_bg.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +25,34 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* In your CSS file */
+.leftarrow {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.rightarrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .leftarrow {
+    margin-top: -270px;
+    width: 38%;
+    margin-left: -35px;
   }
-  to {
-    transform: rotate(360deg);
+  .rightarrow {
+    width: 25%;
+    margin-left: 35px;
+    /* margin-bottom: -35px; */
+    bottom: -40px;
   }
+}
+
+
+.App-link {
+  color: #61dafb;
 }
