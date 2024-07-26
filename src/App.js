@@ -49,7 +49,7 @@ function App() {
                 mt={{ base: "-35px", md: "0px", lg: "0px" }}
                 textAlign="center"
               >
-                EYES OPENs
+                EYES OPEN
               </Text>
             </Stack>
             <Image
